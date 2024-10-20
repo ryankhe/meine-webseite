@@ -10,7 +10,7 @@ function getWeather() {
   }
 
   if (city === "Frankfurt") {
-    alert("du bist 100 % hossein")
+    alert("du bist 100 % hossein");
   }
 
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
@@ -47,4 +47,30 @@ function displayWeather(data) {
         <p><strong>Humidity:</strong> ${humidity}%</p>
         <img src="images/${emoji}.png">
     `;
+}
+
+function add() {
+  const addContainer = document.getElementById("addContainer");
+  addContainer.innerHTML = `
+  <h1 id="AddWid">Add a widjet</h1>
+  <div id="containerAdd">
+    <button type="button" id="weather" class="AddButton" onclick="weather()">Weather</button>
+    <button type="button" id="todo" class="AddButton">Todo</button>
+    <button type="button" id="zitat" class="AddButton">zitat</button>
+    </div>`
+    ;
+}
+function weather() {
+    let weatherContainer = document.getElementById("container1");
+    weatherContainer.style.visibility = "visible";
+
+weatherContainer.innerHTML = `
+
+            <h1>weather display</h1>
+            <div id="input">
+                <input id="city" type="text" placeholder="enter city">
+                <button type="submit" onclick="getWeather()" id="searchBtn">Search</button>
+            </div>
+            <div id="stats" class="stats">
+            </div>`
 }

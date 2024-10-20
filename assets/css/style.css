@@ -18,9 +18,8 @@ header {
   height: 100px;
   border: white groove 1px;
   display: flex;
-  justify-content: center;
-  align-items: center; 
-  gap: 40px;
+  align-items: center;
+  gap: 20px;
   position: relative;
   top: 0;
   margin-bottom: 30px;
@@ -34,7 +33,24 @@ header {
 
 #logo {
   width: 50px;
+  height: 50px;
+ 
 }
+#AddIcon{
+  border: 1px solid white;
+  border-radius: 900px;
+}
+
+img:hover{
+  transform: scale(1.1);
+}
+
+
+
+#title{
+  margin-left: 5vw;
+}
+
 #container1 {
   background: linear-gradient(90deg, #1d1d1d, #1b1b1a, #1d1d1d);
   width: 410px;
@@ -45,7 +61,7 @@ header {
   align-items: center;
   justify-content: center;
   font-family: "Aldrich";
-  margin: 0px;
+  visibility: hidden;
 }
 #city {
   background: linear-gradient(180deg, #1d1d1d, #252525, #1d1d1d);
@@ -95,3 +111,44 @@ header {
   align-items: center;
   font-size: x-large ;
 }
+
+#containerAdd{
+  width: 90vw;
+  height: 200px;
+  display: flex;
+  justify-content:center; 
+  gap: 14px;
+}
+
+#main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.AddButton{
+  background-color: #1b1b1a;
+  color: rgb(255, 255, 255);
+  border: white 1px solid;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  font-size: x-large;
+  font-family: "Aldrich";
+  height: 60px;
+
+}
+#todo {
+  color: white;
+}
+
+#addContainer{
+font-family: 'aldrich';
+  font-size: 20px;
+  align-items: center;
+
+}
+#AddWid{
+  margin:20px;
+}  

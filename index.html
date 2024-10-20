@@ -19,27 +19,21 @@
 <body>
     <!-- header -->
     <header id="header">
-        <h1>DashDay</h1>
+        <h1 id="title">DashDay</h1>
         <img src="assets/images/Data Theresholding.png" id="logo">
     </header>
 
     <!-- main content -->
     <main id="main">
-        <div id="container1">
-            <h1>weather display</h1>
-            <div id="input">
-                <input id="city" type="text" placeholder="enter city">
-                <button type="submit" onclick="getWeather()" id="searchBtn">Search</button>
-            </div>
-            <div id="stats" class="stats">
-            </div>
-
+        <div id="add">
+                <img src="assets/images/add.png" id="AddIcon" onclick="add()">
+        </div> 
+        <div id="addContainer">
+        </div>
+        <div id="container1" class="hidden">
         </div>
     </main>
-
-
-
-
+    <style></style>
 </body>
 
 </html>
