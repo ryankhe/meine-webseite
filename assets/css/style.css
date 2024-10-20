@@ -1,0 +1,85 @@
+body {
+  background-color: #212121;
+  color: white;
+}
+
+header {
+  background: linear-gradient(90deg, #212121, #111111, #212121);
+  color: white;
+  padding: 20px;
+  position: relative;
+  font-family: "Aldrich";
+  margin-bottom: 0px;
+  height: 100px;
+  border: white groove 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 40px;
+}
+.aldrich-regular {
+  font-family: "Aldrich", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#logo {
+  width: 50px;
+}
+#container1 {
+  background: linear-gradient(90deg, #1d1d1d, #1b1b1a, #1d1d1d);
+  width: 20vw;
+  min-width: 420px;
+  max-width: 1000px;
+  height: 850px;
+  border-radius: 18px;
+
+  font-family: "Aldrich";
+}
+#city {
+  background: linear-gradient(180deg, #1d1d1d, #252525, #1d1d1d);
+  height: 60px;
+  width: 350px;
+  color: white;
+  font-family: "Aldrich";
+  margin: 20px;
+  border-radius: 35px;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px white solid;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchBtn {
+  background-color: #252525;
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  margin-left: 20px;
+  padding: 10px 20px;
+  border-radius: 35px;
+  cursor: pointer;
+  width: 127px;
+  height: 60px;
+  font-size: x-large;
+  font-family: "Aldrich";
+}
+
+#stats {
+  border: white 1px solid;
+  border-radius: 35px;
+  height: 600px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  font-size: x-large ;
+}
