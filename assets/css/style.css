@@ -1,6 +1,11 @@
 body {
   background-color: #212121;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 header {
@@ -16,6 +21,10 @@ header {
   justify-content: center;
   align-items: center; 
   gap: 40px;
+  position: relative;
+  top: 0;
+  margin-bottom: 30px;
+  width: 100vw;
 }
 .aldrich-regular {
   font-family: "Aldrich", sans-serif;
@@ -28,13 +37,15 @@ header {
 }
 #container1 {
   background: linear-gradient(90deg, #1d1d1d, #1b1b1a, #1d1d1d);
-  width: 20vw;
-  min-width: 420px;
-  max-width: 1000px;
+  width: 410px;
   height: 850px;
   border-radius: 18px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "Aldrich";
+  margin: 0px;
 }
 #city {
   background: linear-gradient(180deg, #1d1d1d, #252525, #1d1d1d);
@@ -76,6 +87,7 @@ header {
   border: white 1px solid;
   border-radius: 35px;
   height: 600px;
+  width: 350px;
   margin: 20px;
   display: flex;
   flex-direction: column; 
